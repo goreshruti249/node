@@ -27,6 +27,7 @@ template("node_gn_build") {
     } else {
       defines += [ "NODE_USE_V8_PLATFORM=0" ]
     }
+# this one change 
     if (node_enable_inspector) {
       defines += [ "HAVE_INSPECTOR=1" ]
     } else {
